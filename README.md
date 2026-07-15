@@ -48,8 +48,8 @@
 
     <script>
         // ⚠️ นำ URL ของ Web app จาก Google Apps Script ที่คัดลอกไว้มาวางที่นี่
-        const BACKEND_URL = "https://script.google.com/macros/s/AKfycbxiAUr4Alcg0du7ZOyOxXWs60FYmqBw_itlWtEpG7uuQffisEvx5NfUuC_N_1YUaGdHeg/exec"; 
-        
+        const BACKEND_URL = "https://script.google.com/macros/s/AKfycbwbywLQM-IPyOX2Hx9khqWH8Ix4BbxybxTcohZ8NaIzNR8woDxc2gqGawfBeaZA5q4AXg/exec"; 
+                             
         let userId = "";
         let userName = "";
         let latitude = "";
