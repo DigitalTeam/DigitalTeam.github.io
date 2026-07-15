@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -49,7 +48,7 @@
 
     <script>
         // ⚠️ นำ URL ของ Web app จาก Google Apps Script ที่คัดลอกไว้มาวางที่นี่
-        const BACKEND_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL"; 
+        const BACKEND_URL = "https://script.google.com/macros/s/AKfycbxiAUr4Alcg0du7ZOyOxXWs60FYmqBw_itlWtEpG7uuQffisEvx5NfUuC_N_1YUaGdHeg/exec"; 
         
         let userId = "";
         let userName = "";
@@ -60,7 +59,7 @@
         async function initLIFF() {
             try {
                 // ⚠️ เปลี่ยนเป็น LIFF ID ของคุณที่สร้างใน LINE Developers
-                await liff.init({ liffId: "YOUR_LIFF_ID" }); 
+                await liff.init({ liffId: "2010716930-EKc20oMJ" }); 
                 
                 if (!liff.isLoggedIn()) {
                     liff.login(); // ถ้าไม่ได้ล็อกอิน ให้เด้งหน้าล็อกอิน LINE
