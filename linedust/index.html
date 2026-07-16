@@ -23,16 +23,24 @@
         </div>
 
         <form id="report-form">
+            <!-- เปลี่ยนจาก input เป็น select dropdown -->
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2">หัวข้อเรื่องร้องเรียน</label>
-                <input type="text" id="topic" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                <select id="topic" required class="w-full px-3 py-2 border rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <option value="" disabled selected hidden>-- โปรดเลือกประเภทปัญหา --</option>
+                    <option value="ไฟดับ">💡 ไฟดับ / ไฟทางหลวงเสีย</option>
+                    <option value="น้ำท่วม">🌧️ น้ำท่วม / ระบายน้ำช้า</option>
+                    <option value="น้ำเสีย">🤢 น้ำเสีย / กลิ่นเหม็น</option>
+                    <option value="ขยะ">🗑️ ขยะ / สิ่งปฏิกูล</option>
+                    <option value="อื่นๆ">❓ อื่นๆ (โปรดระบุในรายละเอียด)</option>
+                </select>
             </div>
-
+        
             <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2">รายละเอียด</label>
-                <textarea id="detail" rows="4" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                <label class="block text-gray-700 text-sm font-bold mb-2">รายละเอียดเพิ่มเติม</label>
+                <textarea id="detail" rows="4" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="ระบุรายละเอียด เช่น สถานที่ใกล้เคียง หรือข้อมูลเพิ่มเติม..."></textarea>
             </div>
-
+        
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2">ตำแหน่งที่ตั้ง (GPS)</label>
                 <button type="button" id="btn-location" class="w-full bg-blue-500 text-white py-2 rounded-lg font-medium hover:bg-blue-600 transition">
@@ -40,10 +48,10 @@
                 </button>
                 <p id="location-status" class="text-xs text-gray-500 mt-1 text-center"></p>
             </div>
-
+        
             <button type="submit" id="btn-submit" class="w-full bg-green-500 text-white py-3 rounded-lg font-bold hover:bg-green-600 transition mt-4">
                 ส่งเรื่องร้องเรียน
-            </button>
+                    </button>
         </form>
     </div>
 
